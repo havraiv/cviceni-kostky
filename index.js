@@ -7,4 +7,8 @@ console.log('funguju!');
 
 document
   .querySelector('#dice-row')
-  .append(Dice({ side: true }), Dice({ side: true }), Dice({ side: true }));
+  .append(
+    Dice({ side: roll() }),
+    Dice({ side: roll() }),
+    Dice({ side: roll() }),
+  );
